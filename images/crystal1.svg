@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 403.63535 403.63535" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="f">
+   <path transform="matrix(.65157 0 0 .83986 217.57 43.989)" d="m488.61 404.42a201.82 201.82 0 1 1 -403.64 0 201.82 201.82 0 1 1 403.64 0z" fill-rule="evenodd"/>
+  </clipPath>
+  <clipPath id="e">
+   <path d="m488.61 404.42a201.82 201.82 0 1 1 -403.64 0 201.82 201.82 0 1 1 403.64 0z" fill-rule="evenodd"/>
+  </clipPath>
+  <filter id="c">
+   <feGaussianBlur stdDeviation="16.94541"/>
+  </filter>
+  <filter id="b">
+   <feGaussianBlur stdDeviation="2.28182"/>
+  </filter>
+  <filter id="d" x="-.12" y="-.12" width="1.24" height="1.24">
+   <feGaussianBlur stdDeviation="3.79528"/>
+  </filter>
+  <linearGradient id="a" x2="0" y1="156.41" y2="446.91" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#4fbbff" offset="0"/>
+   <stop stop-color="#4fbbff" stop-opacity="0" offset="1"/>
+  </linearGradient>
+ </defs>
+ <path transform="translate(-84.976 -202.6)" d="m488.61 404.42c0 111.46-90.357 201.82-201.82 201.82s-201.82-90.357-201.82-201.82 90.357-201.82 201.82-201.82 201.82 90.357 201.82 201.82z" clip-path="url(#e)" fill="#fff" fill-opacity=".58431" fill-rule="evenodd" filter="url(#c)" stroke="#4fbbff" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="20"/>
+ <path transform="matrix(1.5348 0 0 1.1907 -418.89 -254.98)" d="m518.35 334.32c0 62.183-50.41 112.59-112.59 112.59s-112.59-50.41-112.59-112.59 50.41-112.59 112.59-112.59 112.59 50.41 112.59 112.59z" clip-path="url(#f)" fill="url(#a)" fill-rule="evenodd" filter="url(#b)"/>
+ <path transform="matrix(.65988 0 0 .65988 -213.81 -419.95)" d="m539.77 769.82c0 20.961-16.992 37.953-37.953 37.953s-37.953-16.992-37.953-37.953 16.992-37.953 37.953-37.953 37.953 16.992 37.953 37.953z" fill="#fff" fill-rule="evenodd" filter="url(#d)" opacity=".49362"/>
+</svg>

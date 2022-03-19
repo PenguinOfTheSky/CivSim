@@ -1,0 +1,146 @@
+html, body {
+  font-size: 1rem;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+#topUI {
+  background-color: #111;
+  padding: .1rem;
+  justify-content:space-between;
+}
+#topUI > * {
+  display: flex;
+}
+#view {
+  /*flex-grow:1;*/
+  height:100%;
+}
+#leftMenu {
+  flex-direction: column;
+  background-color: sandybrown;
+  padding: .1rem;
+}
+#leftMenu ul {
+  list-style: none;
+  padding-left: 1px;
+}
+#leftMenu ul li {
+  cursor: pointer;
+  font-weight:700;
+}
+#leftMenu ul li:hover {
+  box-shadow: 0 0 .35rem .05rem white inset,0 0 .08rem .05rem #222;
+}
+#main {
+  display: flex;
+  flex-grow:1;
+  flex-direction:column;
+  max-width:33vw;
+  position:relative;
+  overflow:hidden;
+  max-height:100%;
+}
+#grid {
+  width: 100%;
+  /*background-color: green;*/
+  background-image:url();
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  height:90%;
+}
+#grid > div > * {
+  cursor: pointer;
+}
+#grid > div > *:hover {
+  filter:drop-shadow(0 0 1vh blue);
+}
+#skillbar {
+  height:3rem;
+  max-height:10%;
+  position:relative;
+}
+#clickCounter {
+
+  height:3rem;
+  width: 3rem;
+  max-height:100%;
+  max-width:15%;
+  display:inline-block;
+  box-shadow: 0 0 .15rem rgba(0,0,0,0.3), inset 0 0 .3rem rgba(0,0,0,1);
+  cursor: pointer;
+  border-radius: 100%;
+  overflow: hidden;
+  color: #000;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.resource {
+  display: inline-flex;
+  margin-left: .1rem;
+  margin-right: .2rem;
+  color: white;
+  min-width:3rem;
+  align-items: center;
+  justify-content:flex-end;
+}
+.resource img {
+  height:1rem;
+  width:1rem;
+}
+.menuDisplay_item {
+  background-color: rgba(45,255,71,.2);
+  border-radius: .5rem;
+  padding:.5rem;
+  border-bottom: .2rem solid black;
+  text-align:center;
+}
+#menuDisplay {
+  background-color: rgba(225, 151, 17,.2);
+  overflow-y:auto;
+  flex-direction: column;
+  flex-grow:1;
+  min-width:15rem;
+}
+#menuDisplay .buy {
+  margin: .15rem;
+  background-color: #72f6e5;
+  font-weight:700;
+  text-shadow: .1rem .1rem .2rem gold;
+  border: none;
+  box-shadow: .01rem .01rem .06rem .05rem black;
+  transition: transform .2s linear;
+}
+#menuDisplay .buy:hover{
+  background-color: #72f6e5;
+  font-weight:900;
+  box-shadow: .01rem .01rem .09rem .09rem #222;
+}
+#menuDisplay:not(input) .buy:active {
+  background-color: #52d6c5;
+  box-shadow: .01rem .01rem .04rem .04rem #000;
+}
+#menuDisplay .sell {
+  margin: .15rem;
+  background-color: #72f6e5;
+  font-weight:700;
+  text-shadow: .1rem .1rem .2rem gold;
+  border: none;
+  box-shadow: .01rem .01rem .06rem .05rem black;
+  transition: transform .2s linear;
+}
+#menuDisplay .sell:hover{
+  background-color: #72f6e5;
+  font-weight:900;
+  box-shadow: .01rem .01rem .09rem .09rem #222;
+}
+#menuDisplay .sell:active {
+}
+.icon_small {
+  width: 1.3rem;
+  height: 1.3rem;
+  vertical-align:middle;
+}

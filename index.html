@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<title>CivSim</title>
+<script src='https://lycelia.com/lib/D.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.2/localforage.min.js'></script>
+<script>
+  Object.assign(window, {
+    json: {},
+    events: {},
+    data: {},
+    pc: {
+      location: 'Shinyville',
+      harvest: {
+        logs: 0,
+        gold: 0,
+        shinies: 0,
+        mobs: 0
+      },
+      shinies: 0,
+      pop: 0,
+      birthrate: .5,
+      maxPop: 0,
+      logs: 0,
+      clicks: 60,
+      level: 0,
+      land: 10,
+      scienceSpeed: 1.00,
+      gold: 0,
+      usedLand: 0,
+      morale: 1.00,
+      built: {},
+      trained: {},
+      research: {}
+    },
+    render: {},
+    help: null
+  })
+</script>
+<link rel="stylesheet" type="text/css" href="https://lycelia.com/css/base.css">
+<link rel="stylesheet" type="text/css" href="https://lycelia.com/css/extensions.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script src='events/loadFiles.js'></script>
+</head>
+<body>
+  <flex id ='topUI'>
+    <left>
+      <div class='resource' title='population'>
+        <span id='population'>0/0</span>
+        <img src='images/icons/pop.svg' style='filter: invert(100%);'>
+      </div>
+      <div class='resource' title='shinies'>
+        <span id='shinies'>0</span>
+        <img src='images/shiniesIcon.svg'>
+      </div>
+      <div class='resource' title='logs'>
+        <span id='logs'>0</span>
+        <img src='images/icons/logs.svg'>
+      </div>
+      <div class='resource' title='gold'>
+        <span id='gold'>0</span>
+        <img src='images/icons/coins.svg'>
+      </div>
+      <div class='resource' title='morale'>
+        <span id='morale'>100</span>
+        <img src='images/icons/smile.svg'>
+      </div>
+      <div class='resource' title='land'>
+        <span id='land'>0/10</span>
+        <img src='images/icons/land.svg'>
+      </div>
+    </left>
+    <right>
+      <div class='resource' title='options/settings'>
+        <img style='filter: invert(100%); cursor: pointer;' src='images/icons/gear.svg' onclick='window.render.settings();'>
+      </div>
+    </right>
+  </flex>
+  <flex id='view'>
+    <flex id='leftMenu'>
+      <ul>
+        <li onclick='json.build.init()'>Build</li>
+        <li onclick='json.train.init()'>Train</li>
+        <li onclick='json.quests.init()'>Quests</li>
+        <li onclick='json.research.init()'>Research</li>
+        <li onclick='json.empire.init()'>Empire</li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </flex>
+    <flex id='menuDisplay'>
+
+    </flex>
+    <div id='main'>
+      <div id='grid'>
+
+      </div>
+      <div id='skillbar'>
+        <div id='clickCounter' title='clicks'></div>
+
+      </div>
+    </div>
+  </flex>
+
+</body>
+</html>
