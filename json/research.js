@@ -84,6 +84,22 @@ Object.assign(json, {
           1: {
             name: "Sharpened Rocks"
           }
+          "Land Growth": {
+        level: {
+          0: {
+            req: ["Sharpness", 1],
+            tip: `<i>You too now have the ability to grow your land size.</i>`,
+            info: ``,
+            cost: {
+              time: .3,
+              logs: 100,
+              shinies: 100,
+              gold:100
+            }
+          },
+          1: {
+            name: "Bigger Land"
+          }
         }
       },
     }
