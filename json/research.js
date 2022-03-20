@@ -166,14 +166,14 @@ Object.assign(json, {
             })
             let div = D.make('div', {
               className: 'menuDisplay_item',
-              innerHTML: `<b style='display:block;text-align:center;'>${ele}:: level ${level}</b> ${obj[ele].level[level].tip}<br>`
+              innerHTML: `<b style='display:block;text-align:center;'>${ele}: level ${level}</b> ${obj[ele].level[level].tip}<br>`
             })
             div.append(buttons, owned)
             return div
           } else {
             let div = D.make('div', {
               className: 'menuDisplay_item',
-              innerHTML: `<b style='display:block;text-align:center;'>${ele}:: level ${level}</b><br> Fully researched.<br>`
+              innerHTML: `<b style='display:block;text-align:center;'>${ele}: level ${level}</b><br> Fully researched.<br>`
             })
             return div
           }

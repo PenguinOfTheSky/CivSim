@@ -1,7 +1,7 @@
 render.lootbag = function(opts={}) {
   let item = D.make('img', {
     className: 'lootbag',
-    style: `position:absolute;z-index:1;transition:.6s all ease-in;width:7vh;height:7vh;right:45%;top:15%; filter:drop-shadow(1px 1px 3px gold);`,
+    style: `position:absolute;z-index:4;transition:.6s all ease-in;width:7vh;height:7vh;right:45%;top:15%; filter:drop-shadow(1px 1px 3px gold);`,
   })
   let pos = [Math.random()*85,Math.random()*33]
   let active = true;

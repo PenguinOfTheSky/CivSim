@@ -48,7 +48,7 @@
         if (!ele.currentImage) ele.currentImage = ele.images[Math.floor(Math.random() * ele.images.length)]
         let img = D.make('img', {
           src: ele.currentImage,
-          style: 'height:100%;width:100%; transition: transform .5s linear;',
+          className:'clickThing',
           draggable: false
         })
         ele.ref = img

@@ -53,6 +53,11 @@ Object.assign(json, {
         audio = new Audio('audio/clink4.mp3')
         audio.volume = .5
         ele.render()
+        let orig = ele.ref.style.transform
+        ele.ref.style.transform = `skew(${Math.random() * 20 - 10}deg,${Math.random() * 20 - 10}deg) ` + orig
+        setTimeout(function() {
+          ele.ref.style.transform = orig
+        },100)
       //  ele.ref.style.transform =  `scale(${1.5 - ((ele.mined+1)/ele.amount)})`
       }
       if (!tick) {
@@ -205,6 +210,11 @@ Object.assign(json, {
           audio = new Audio('audio/woodchop2.mp3')
           audio.volume = .33
           ele.render()
+          let orig = ele.ref.style.transform
+          ele.ref.style.transform = `skew(${Math.random() * 20 - 10}deg,${Math.random() * 20 - 10}deg) ` + orig
+          setTimeout(function() {
+            ele.ref.style.transform = orig
+          },100)
         }
 
         if (!tick) {

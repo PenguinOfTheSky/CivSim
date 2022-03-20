@@ -79,6 +79,11 @@ Object.assign(json, {
           audio = new Audio('audio/clink4.mp3')
           audio.volume = .5
           ele.render()
+          let orig = ele.ref.style.transform
+          ele.ref.style.transform = `skew(${Math.random() * 20 - 10}deg,${Math.random() * 20 - 10}deg) ` + orig
+          setTimeout(function() {
+            ele.ref.style.transform = orig
+          },100)
         }
         //D.find('#logs').innerText = pc.logs
         if (!tick) {

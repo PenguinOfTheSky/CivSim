@@ -20,7 +20,6 @@ events.tick = function() {
       } else if (grid[i].name == 'shiny') shinies.push(i)
     }
   }
-  console.log(trees)
   for (let x in pc.harvest) {
     if (pc.harvest[x]) {
       if (x == 'mobs') {
