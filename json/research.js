@@ -86,6 +86,29 @@ Object.assign(json, {
           }
         }
       },
+      "Knowledge": {
+        level: {
+          0: {
+            tip: `you feel the need to grow smarter`, //placeholder
+            info: ``,
+            cost: {
+              time: .3,
+              logs: 15,
+              shinies: 5,
+              gold:10,
+            }
+          },
+          1: {
+            tip: `You decided that it was time for your civilization to have a spoken language, the grunts were just not cutting it anymore.`,
+            info: ``,
+            cost: {
+              time: .5,
+              logs: 50,
+              gold: 30,
+            }
+          }
+        }
+      },
     }
     let opts = {
       "init": function() {
