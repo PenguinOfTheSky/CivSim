@@ -86,7 +86,7 @@ Object.assign(json, {
           }
         }
       },
-      "Knowledge": {
+      /*"Knowledge": { //has potential. Particularly the second one. level 0 is a little generic. Maybe have this more generally be called language with subsets of "grunts. Whistles. Intense hand gestures. Incoherent Shouting. Actual words." Not sure about knowledge as a resource as I'm not sure what it would be used for or represented graphically. Maybe have this enable something that gives a bonus to defense instead? Or just have it give a bonus multiplier instead of having it build something, with a longer research time maybe.
         level: {
           0: {
             tip: `you feel the need to grow smarter`, //placeholder
@@ -108,7 +108,7 @@ Object.assign(json, {
             }
           }
         }
-      },
+      },*/
     }
     let opts = {
       "init": function() {
