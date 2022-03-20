@@ -99,6 +99,19 @@ Object.assign(json, {
           logs: 15
         }
       },
+     // "Library": {
+     //   req: 'Knowledge',
+     //   level: 2,
+     //   tip: "Placeholder",
+     //   info: ``,
+     //   onbuy: function(n) {
+     //     pc.Knowledge += 1 * n
+     //   },
+     //   cost: {
+     //     land: 2,
+     //     logs: 20
+     //   }
+     // },
     }
     let opts = {
       "init": function() {
