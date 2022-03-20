@@ -3,18 +3,13 @@ Object.assign(json, {
 
     let obj = {
 
-      "Bed of Leaves": {
+      "Mole": {
         level: 0,
-        tip: "Raises max population by 1",
+        tip: "If only this mole wasn't here, you could build something",
         info: ``,
         onclick: function() {
-          pc.maxPop += 1
-          render.population()
+          console.log('fighting')
         },
-        cost: {
-          land: 1,
-          logs: 1
-        }
       }
     }
     let opts = {
@@ -23,9 +18,7 @@ Object.assign(json, {
         let frag = D.createDocumentFragment()
         let div = D.make('div', {
           className: "menuDisplay_item",
-          innerHTML: `<b>Total Land:</b> ${pc.land}<br>
-          <b>Land in use:</b> ${pc.usedLand} <br>
-          <b>% used:</b> ${Math.round(pc.usedLand/pc.land *100)}%`
+          innerHTML: `Land isn't free. There are monsters out there.`
         })
         frag.appendChild(div)
         let keys = Object.keys(obj)
